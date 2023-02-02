@@ -20,8 +20,12 @@ public class Filter {
     public static void main(String[] args) throws Exception {
         String inputPath = args[0];
         String outputPath = args[1];
-        // String desiredResponse = args[2];
+
+        //Part 3
+        String desiredResponse = args[2];
         Configuration conf = new Configuration();
+        conf.set("responseCode", desiredResponse);
+
         Job job = Job.getInstance(conf, "filter");
         // TODO pass the desiredResponse code to the MapReduce program
         job.setJarByClass(Filter.class);
@@ -43,6 +47,8 @@ public class Filter {
                 throws IOException, InterruptedException {
             super.setup(context);
             // TODO add additional setup to your map task, if needed.
+            //Part 3, Step 3
+
         }
 
         public void map(LongWritable key, Text value, Context context)
