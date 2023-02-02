@@ -12,7 +12,7 @@
 * (Q1) What do you think the line `job.setJarByClass(Filter.class);` does?</br>
 I think the line will set the JAR of the Filter class to perform the MapReduce tasks. It will inform Hadoop of the JAR file that it needs to send to the nodes.         
 * (Q2) What is the effect of the line `job.setNumReduceTasks(0);`?</br>
-No reducer will execute and no aggregation will take place. That meanns  hat it only has a map phase.
+No reducer will execute and no aggregation will take place. That means  hat it only has a map phase.
 * (Q3) Where does the `main` function run? (Driver node, Master node, or an executor node).</br>
 The main function run on the master node.
 * (Q4) How many lines do you see in the output?

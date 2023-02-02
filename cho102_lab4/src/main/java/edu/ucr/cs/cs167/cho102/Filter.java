@@ -51,6 +51,8 @@ public class Filter {
             String[] parts = value.toString().split("\t");
             String responseCode = parts[5];
             // TODO Filter by response code
+            if (responseCode.equals("200"))
+                context.write(NullWritable.get(), value);
         }
     }
 }
