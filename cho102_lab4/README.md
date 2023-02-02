@@ -16,9 +16,9 @@ No reducer will execute and no aggregation will take place. That means  hat it o
 * (Q3) Where does the `main` function run? (Driver node, Master node, or an executor node).</br>
 The main function run on the master node.
 * (Q4) How many lines do you see in the output?</br>
-  Map output records=27972
+  27972 lines
 * (Q5) How many files are produced in the output? </br>
-
+For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000.</br>For the nasa_19950630.22-19950728.12.tsv file, 5 files are produced in the output: part-m-00000, part-m-00000, part-m-00001, part-m-00002, part-m-00003, part-m-00004.
 * (Q6) Explain this number based on the input file size and default block size.
 
 * (Q7) How many files are produced in the output?

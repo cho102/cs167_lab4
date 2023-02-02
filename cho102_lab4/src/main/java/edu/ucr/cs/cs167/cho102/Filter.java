@@ -24,7 +24,7 @@ public class Filter {
         //Part 3
         String desiredResponse = args[2];
         Configuration conf = new Configuration();
-        conf.set("responseCode", desiredResponse);
+        conf.set("confCode", desiredResponse);
 
         Job job = Job.getInstance(conf, "filter");
         // TODO pass the desiredResponse code to the MapReduce program
@@ -41,13 +41,14 @@ public class Filter {
 
     public static class TokenizerMapper extends
             Mapper<LongWritable, Text, NullWritable, Text> {
-
+        String codeVar;
         @Override
         protected void setup(Context context)
                 throws IOException, InterruptedException {
             super.setup(context);
             // TODO add additional setup to your map task, if needed.
             //Part 3, Step 3
+            codeVar = context.getConfiguration().get("confCode");
 
         }
 
@@ -57,7 +58,7 @@ public class Filter {
             String[] parts = value.toString().split("\t");
             String responseCode = parts[5];
             // TODO Filter by response code
-            if (responseCode.equals("200")) {
+            if (responseCode.equals(codeVar)) {
                 context.write(NullWritable.get(), value);
             }
         }
