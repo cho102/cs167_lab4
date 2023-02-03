@@ -26,11 +26,11 @@ For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000 
 * (Q8) Explain this number based on the input file size and default block size.
 
 * (Q9) How many files are produced in the output directory and how many lines are there in each file?
-
+</br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. 
 * (Q10) Explain these numbers based on the number of reducers and number of response codes in the input file.
 
 * (Q11) How many files are produced in the output directory and how many lines are there in each file?
-
+  </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001.
 * (Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
 
 * (Q13) How many files are produced in the output directory and how many lines are there in each file?
