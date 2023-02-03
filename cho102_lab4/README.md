@@ -18,11 +18,11 @@ The main function run on the master node.
 * (Q4) How many lines do you see in the output?</br>
   27972 lines
 * (Q5) How many files are produced in the output? </br>
-For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000.</br>For the nasa_19950630.22-19950728.12.tsv file, 5 files are produced in the output: part-m-00000, part-m-00001, part-m-00002, part-m-00003, part-m-00004.
+For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000 along with the _SUCCESS file.</br>For the nasa_19950630.22-19950728.12.tsv file, 5 files are produced in the output: part-m-00000, part-m-00001, part-m-00002, part-m-00003, part-m-00004 along with the _SUCCESS file.
 * (Q6) Explain this number based on the input file size and default block size.
 
 * (Q7) How many files are produced in the output?
-  For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000.</br>For the nasa_19950630.22-19950728.12.tsv file, 2 files are produced in the output: part-m-00000, part-m-00001.
+  For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000 along with the _SUCCESS file.</br>For the nasa_19950630.22-19950728.12.tsv file, 2 files are produced in the output: part-m-00000, part-m-00001 along with the _SUCCESS file.
 * (Q8) Explain this number based on the input file size and default block size.
 
 * (Q9) How many files are produced in the output directory and how many lines are there in each file?
