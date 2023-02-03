@@ -48,6 +48,12 @@ public class Aggregation {
             int responseCode = Integer.parseInt(parts[5]);
             int bytes = Integer.parseInt(parts[6]);
             // TODO write <responseCode, bytes> to the output
+            //Set out key ex: word.set(itr.nextToken());
+            //Set out val
+            outKey.set(responseCode);
+            outVal.set(bytes);
+            //context pass to reducer ex: context.write(word, one);
+            context.write(outKey, bytes);
         }
     }
 
@@ -60,6 +66,14 @@ public class Aggregation {
                            Context context)
                 throws IOException, InterruptedException {
             // TODO write <key, sum(values)> to the output
+            //calculate sum
+            //write output
+               int sum = 0;
+              for (IntWritable val : values) {
+                sum += val.get();
+              }
+              result.set(sum);
+              context.write(key, result);
         }
     }
 }
