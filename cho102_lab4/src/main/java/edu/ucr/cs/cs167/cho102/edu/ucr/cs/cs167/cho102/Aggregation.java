@@ -53,7 +53,7 @@ public class Aggregation {
             outKey.set(responseCode);
             outVal.set(bytes);
             //context pass to reducer ex: context.write(word, one);
-            context.write(outKey, bytes);
+            context.write(outKey, outVal);
         }
     }
 
