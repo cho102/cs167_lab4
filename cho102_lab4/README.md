@@ -26,10 +26,23 @@ For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000 
 * (Q8) Explain this number based on the input file size and default block size.
 </br>Since the default block size is 64MB, the  nasa_19950801.tsv file is small enough to fit in one block. That is also true for the larger file to be split into two parts after filterinf for response code "200". 
 * (Q9) How many files are produced in the output directory and how many lines are there in each file?
-</br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are ___lines, part-r-00000 ___lines and part-r-00001 ___ lines.
+</br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCESS file there are 0 lines, part-r-00000 5 lines:</br>
+200	481974462</br>
+302	26005</br>
+304	0</br>
+404	0</br>
+and part-r-00001 0 lines.
 * (Q10) Explain these numbers based on the number of reducers and number of response codes in the input file.
 </br> TODO
-* (Q11) How many files are produced in the output directory and how many lines are there in each file? </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are ___lines, part-r-00000 ___lines and part-r-00001 ___ lines.
+* (Q11) How many files are produced in the output directory and how many lines are there in each file? </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are 0 lines, part-r-00000 5 lines:</br> 200	37585778 </br>
+302	3682049</br>
+304	0 </br>
+404	0</br>
+500	0</br>
+and part-r-00001 2 lines: </br>
+403	0 </br>
+501	0</br>
+
 * (Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
 </br> TODO
 * (Q13) How many files are produced in the output directory and how many lines are there in each file?
