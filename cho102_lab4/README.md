@@ -47,8 +47,7 @@ and part-r-00001 2 lines: </br>
 </br>  2 reducers are set so two output files are in the output directory. There are 7 response codes in the large file so after part-r-00000 is full, part-r-00001 is then used for the output.
 * (Q13) How many files are produced in the output directory and how many lines are there in each file?
 </br>3 files were produced in the filter output directory: _SUCCESS, part-m-00000, part-m-00001. In the _SUCCESS file there are 0 lines, part-m-00000 1533533 lines and part-m-00001 168001 lines. </br></br>
-
-</br>3 files were produced in the aggregation output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCESS file there are 0 lines, part-m-00000 1 lines:</br>
+3 files were produced in the aggregation output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCESS file there are 0 lines, part-m-00000 1 lines:</br>
 200	37567599</br>
 and part-r-00001 0 lines.
 * (Q14) Explain these numbers based on the number of reducers and number of response codes in the input file.
