@@ -29,8 +29,7 @@ For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000 
 </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are ___lines, part-r-00000 ___lines and part-r-00001 ___ lines.
 * (Q10) Explain these numbers based on the number of reducers and number of response codes in the input file.
 </br>
-* (Q11) How many files are produced in the output directory and how many lines are there in each file?
-  </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are ___lines, part-r-00000 ___lines and part-r-00001 ___ lines.
+* (Q11) How many files are produced in the output directory and how many lines are there in each file? </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are ___lines, part-r-00000 ___lines and part-r-00001 ___ lines.
 * (Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
 </br>
 * (Q13) How many files are produced in the output directory and how many lines are there in each file?
