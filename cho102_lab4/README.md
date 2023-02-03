@@ -33,7 +33,7 @@ For the nasa_19950801.tsv file, 1 file was produced in the output: part-m-00000 
 404	0</br>
 and part-r-00001 0 lines.
 * (Q10) Explain these numbers based on the number of reducers and number of response codes in the input file.
-</br> TODO
+</br> Since there are two reducers set, two output files are created. There is only 5 response codes so only part-r-00000 has output lines since it could all fit in that file and part-r-00001 is empty. 
 * (Q11) How many files are produced in the output directory and how many lines are there in each file? </br>3 files were produced in the output directory: _SUCCESS, part-r-00000, part-r-00001. In the _SUCCES file there are 0 lines, part-r-00000 5 lines:</br> 200	37585778 </br>
 302	3682049</br>
 304	0 </br>
@@ -44,7 +44,7 @@ and part-r-00001 2 lines: </br>
 501	0</br>
 
 * (Q12) Explain these numbers based on the number of reducers and number of response codes in the input file.
-</br> TODO
+</br>  2 reducers are set so two output files are in the output directory. There are 7 response codes in the large file so after part-r-00000 is full, part-r-00001 is then used for the output.
 * (Q13) How many files are produced in the output directory and how many lines are there in each file?
 </br> TODO
 * (Q14) Explain these numbers based on the number of reducers and number of response codes in the input file.
